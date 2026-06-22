@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shresth Jaiswal — Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Shresth Jaiswal, a Full-Stack Developer specializing in React/Next.js ecosystem, MERN stack, and optimized web applications.">
+  
+  <!-- Typography & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  
+  <!-- Primary Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+  <!-- Retro Boot Loader Overlay (Aditi Style) -->
+  <div id="loader" class="loader-overlay">
+    <div class="retro-window loader-window">
+      <div class="window-title-bar">
+        <div class="window-controls">
+          <span class="control-dot close"></span>
+          <span class="control-dot minimize"></span>
+          <span class="control-dot maximize"></span>
+        </div>
+        <span class="window-title-text">SYSTEM_BOOT.BAT</span>
+      </div>
+      <div class="window-body loader-body">
+        <div class="boot-logs" id="boot-logs">
+          <div>[SYSTEM]: SHRESTH-OS v1.0 INITIALIZING...</div>
+          <div>[SYSTEM]: MOUNTING RAM: 16384 MB // OK</div>
+          <div>[SYSTEM]: LOADING STYLESHEET (style.css)... OK</div>
+          <div>[SYSTEM]: MOUNTING PORTFOLIO DATA SHEETS... OK</div>
+          <div>[SYSTEM]: VERIFYING CREDENTIALS (SHRESTH JAISWAL)... OK</div>
+          <div class="boot-cursor">[SYSTEM]: BOOT SEQUENCE COMPLETING. WELCOME.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Neo-Brutalist Sticky Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-logo">
+        <span class="logo-text">SHRESTH // OS_v1.0</span>
+        <div class="status-indicator">
+          <span class="pulse-dot"></span>
+          <span class="status-text">ONLINE &amp; CREATING</span>
+        </div>
+      </div>
+      
+      <nav class="header-nav">
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#terminal-section" class="nav-link">CONSOLE</a>
+        <a href="#sketch-section" class="nav-link">SKETCHPAD</a>
+        <a href="#instruments" class="nav-link">STACK</a>
+        <a href="#projects" class="nav-link">PROJECTS</a>
+        <a href="#chronicle" class="nav-link">CHRONICLE</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="resume.pdf" class="btn btn-brutalist btn-accent-yellow" target="_blank" style="margin-right: 12px;">RESUME.PDF</a>
+        <a href="#contact" class="btn btn-brutalist nav-cta">INQUIRE</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+    
+    <!-- Hero (Prologue) Section -->
+    <section class="section-hero" id="hero">
+      <div class="hero-layout">
+        
+        <div class="hero-main">
+          <div class="badge-row">
+            <span class="brutalist-badge badge-orange">FULL-STACK DEVELOPER</span>
+            <span class="brutalist-badge badge-yellow">CSE UNDERGRAD</span>
+          </div>
+          <h1 class="hero-title">
+            HI, I'M <span class="highlight-underline">SHRESTH</span>!
+          </h1>
+          <p class="hero-subtitle">
+            I'm a full-stack software developer pursuing computer science at VIT Bhopal. I build production-grade web systems across the React/Next.js ecosystem, design robust database models, and write highly optimized API code.
+          </p>
+          
+          <div class="hero-cta-row">
+            <a href="mailto:jaisshresth143@gmail.com" class="btn btn-brutalist btn-accent-yellow">EMAIL ME ↗</a>
+            <a href="https://github.com/Shresth-11" target="_blank" class="btn btn-brutalist btn-accent-purple">GITHUB ↗</a>
+            <a href="https://linkedin.com/in/shresth-jaiswal" target="_blank" class="btn btn-brutalist btn-accent-mint">LINKEDIN ↗</a>
+            <a href="resume.pdf" target="_blank" class="btn btn-brutalist btn-accent-orange">RESUME ↗</a>
+          </div>
+        </div>
+
+        <!-- Neo-Brutalist Framed Profile Picture (Aditi Style) -->
+        <div class="hero-image-column">
+          <div class="profile-card">
+            <div class="profile-frame">
+              <img src="profile.jpg" alt="Shresth Jaiswal" class="profile-image">
+            </div>
+            <div class="profile-details-banner">
+              <span class="banner-title">SHRESTH_JAISWAL.JPG</span>
+              <span class="banner-status">SYSTEM: OK</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Dynamic Marquee Banner -->
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <span>NEXT.JS // TYPESCRIPT // REACT.JS // REDUX TOOLKIT // NODE.JS // EXPRESS // FASTAPI // MONGODB // MYSQL // FIREBASE // APPWRITE // VERCEL // DOCKER // FIGMA</span>
+        <span>NEXT.JS // TYPESCRIPT // REACT.JS // REDUX TOOLKIT // NODE.JS // EXPRESS // FASTAPI // MONGODB // MYSQL // FIREBASE // APPWRITE // VERCEL // DOCKER // FIGMA</span>
+      </div>
+    </div>
+
+    <!-- Interactive Terminal Command Console Window -->
+    <section class="section-terminal" id="terminal-section">
+      <div class="section-heading-block">
+        <span class="section-num">§ 01</span>
+        <h2 class="section-title">Console Terminal</h2>
+        <p class="section-desc">Run commands to inspect system logs</p>
+      </div>
+
+      <div class="retro-window terminal-window">
+        <div class="window-title-bar title-bar-teal">
+          <div class="window-controls">
+            <span class="control-dot close"></span>
+            <span class="control-dot minimize"></span>
+            <span class="control-dot maximize"></span>
+          </div>
+          <span class="window-title-text">guest@shresth-os:~</span>
+          <span class="window-status-tag">SHELL: ACTIVE</span>
+        </div>
+        
+        <div class="window-body terminal-body" id="terminal-output">
+          <div class="terminal-line">[SYSTEM]: Initializing shell environment. Type <span class="cmd-highlight">help</span> to fetch commands.</div>
+        </div>
+        
+        <div class="terminal-input-row">
+          <span class="terminal-prompt">guest@shresth-os:~$</span>
+          <input type="text" id="terminal-input" placeholder="Type a command..." autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+
+      <!-- Quick Command Buttons -->
+      <div class="command-shortcuts">
+        <span class="shortcut-label">SHORTCUTS:</span>
+        <button class="btn btn-brutalist btn-small" data-cmd="about">about.txt</button>
+        <button class="btn btn-brutalist btn-small" data-cmd="projects">projects.sh</button>
+        <button class="btn btn-brutalist btn-small" data-cmd="skills">skills.json</button>
+        <button class="btn btn-brutalist btn-small" data-cmd="resume">resume.pdf</button>
+        <button class="btn btn-brutalist btn-small" data-cmd="contact">contact.md</button>
+        <button class="btn btn-brutalist btn-small btn-clear" data-cmd="clear">clear</button>
+      </div>
+    </section>
+
+    <!-- About & Biography Section -->
+    <section class="section-about" id="about">
+      <div class="section-heading-block">
+        <span class="section-num">§ 02</span>
+        <h2 class="section-title">About / Bio</h2>
+        <p class="section-desc">Manifesto, roots &amp; core principles</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-bio-card">
+          <div class="card-header header-orange">THE MANIFESTO</div>
+          <div class="card-body">
+            <p class="lead-bio">
+              I build web products with focus, structural reliability, and strong attention to details.
+            </p>
+            <p class="paragraph-bio">
+              As an engineering undergraduate at VIT Bhopal, I spend my days designing modular data schemas, writing API gateways, and styling clean user experiences.
+            </p>
+            <p class="paragraph-bio">
+              I love bridging the gaps between frontend reactivity and backend scalability. I focus on optimizing LCP timings, decoupling dependencies, and implementing clean state flow.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-principles">
+          <div class="card-header header-purple">OPERATING PRINCIPLES</div>
+          
+          <!-- Collapsible Accordion -->
+          <div class="accordion">
+            <div class="accordion-item active">
+              <button class="accordion-trigger">
+                <span class="accordion-num">01/</span>
+                <span class="accordion-title">Responsive Optimization</span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>Ensuring zero accessibility regressions and smooth performance across all viewports. Utilizing techniques like code splitting, memoization, and optimal asset loading to cut page latencies.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span class="accordion-num">02/</span>
+                <span class="accordion-title">Rigorous State Management</span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>Architecting scalable global state using Redux Toolkit across domain slices. Decoupling view layers from business logic to eliminate prop-drilling and unwanted component re-renders.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span class="accordion-num">03/</span>
+                <span class="accordion-title">Secure &amp; Seamless APIs</span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>Developing secure transaction endpoints using JWT session validations, role-based access control, and structured query validations on backend platforms like Express and FastAPI.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-trigger">
+                <span class="accordion-num">04/</span>
+                <span class="accordion-title">Serverless Integration</span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>Leveraging powerful serverless architectures (Appwrite, Firebase) to abstract database management, handle user authentications, and media storage streams efficiently.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Sketchpad / Doodle Canvas Section -->
+    <section class="section-sketch" id="sketch-section">
+      <div class="section-heading-block">
+        <span class="section-num">§ 03</span>
+        <h2 class="section-title">Doodle Canvas</h2>
+        <p class="section-desc">Interactive retro graphic field pad</p>
+      </div>
+
+      <div class="retro-window sketch-window">
+        <div class="window-title-bar title-bar-lavender">
+          <div class="window-controls">
+            <span class="control-dot close"></span>
+            <span class="control-dot minimize"></span>
+            <span class="control-dot maximize"></span>
+          </div>
+          <span class="window-title-text">sketchpad.exe</span>
+          <span class="window-status-tag">BUFFER: DRAWING</span>
+        </div>
+        
+        <div class="sketch-panel">
+          <div class="sketch-toolbar">
+            <div class="toolbar-group">
+              <span class="tool-label">SWATCH:</span>
+              <button class="color-btn active" data-color="#ff3d14" style="background-color: #ff3d14;"></button>
+              <button class="color-btn" data-color="#1a1a1a" style="background-color: #1a1a1a;"></button>
+              <button class="color-btn" data-color="#bbf2d6" style="background-color: #bbf2d6;"></button>
+              <button class="color-btn" data-color="#3b82f6" style="background-color: #3b82f6;"></button>
+            </div>
+            
+            <div class="toolbar-group">
+              <span class="tool-label">SIZE:</span>
+              <button class="size-btn active" data-size="4">THIN</button>
+              <button class="size-btn" data-size="8">MID</button>
+              <button class="size-btn" data-size="16">MAX</button>
+            </div>
+
+            <div class="toolbar-group">
+              <button id="tool-eraser" class="btn btn-brutalist btn-small">ERASER</button>
+              <button id="tool-grid" class="btn btn-brutalist btn-small active">GRID</button>
+            </div>
+
+            <div class="toolbar-group-right">
+              <button id="tool-clear" class="btn btn-brutalist btn-small btn-clear">CLEAR CANVAS</button>
+            </div>
+          </div>
+
+          <div class="canvas-container grid-background" id="canvas-container">
+            <canvas id="sketchpad"></canvas>
+            <div class="canvas-watermark">SHRESTH.JAISWAL // SKETCHPAD</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instruments & Stack (Skills) Section -->
+    <section class="section-instruments" id="instruments">
+      <div class="section-heading-block">
+        <span class="section-num">§ 04</span>
+        <h2 class="section-title">Skills &amp; Tech Stack</h2>
+        <p class="section-desc">The languages, frameworks and engines used</p>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-category-card">
+          <div class="card-header header-yellow">LANGUAGES &amp; ALGORITHMS</div>
+          <div class="card-body">
+            <ul class="skills-tags-list">
+              <li class="skill-tag">Java</li>
+              <li class="skill-tag">JavaScript (ES6+)</li>
+              <li class="skill-tag">TypeScript</li>
+              <li class="skill-tag">C++</li>
+              <li class="skill-tag">Python</li>
+              <li class="skill-tag">DSA Foundation</li>
+              <li class="skill-tag">OOP Paradigms</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="stack-category-card">
+          <div class="card-header header-mint">FRONTEND ENGINEERING</div>
+          <div class="card-body">
+            <ul class="skills-tags-list">
+              <li class="skill-tag">React.js</li>
+              <li class="skill-tag">Next.js</li>
+              <li class="skill-tag">Redux Toolkit</li>
+              <li class="skill-tag">React Native</li>
+              <li class="skill-tag">Vite</li>
+              <li class="skill-tag">React Hook Form</li>
+              <li class="skill-tag">TailwindCSS</li>
+              <li class="skill-tag">HTML5 &amp; CSS3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="stack-category-card">
+          <div class="card-header header-orange">BACKEND &amp; DEVOPS</div>
+          <div class="card-body">
+            <ul class="skills-tags-list">
+              <li class="skill-tag">Node.js</li>
+              <li class="skill-tag">Express.js</li>
+              <li class="skill-tag">FastAPI</li>
+              <li class="skill-tag">RESTful API Design</li>
+              <li class="skill-tag">MongoDB</li>
+              <li class="skill-tag">MySQL</li>
+              <li class="skill-tag">Firebase</li>
+              <li class="skill-tag">Appwrite BaaS</li>
+              <li class="skill-tag">Git &amp; GitHub</li>
+              <li class="skill-tag">Docker</li>
+              <li class="skill-tag">Postman</li>
+              <li class="skill-tag">Vercel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work (Projects Grid Cards - Aditi Style) -->
+    <section class="section-projects" id="projects">
+      <div class="section-heading-block">
+        <span class="section-num">§ 05</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">Indexed catalog of deployed code assemblies</p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project Card 1 (Typemate Rich Text Editor) -->
+        <div class="project-window-card">
+          <div class="window-title-bar title-bar-yellow">
+            <div class="window-controls">
+              <span class="control-dot close"></span>
+              <span class="control-dot minimize"></span>
+            </div>
+            <span class="window-title-text">project_typemate.exe</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-header-row">
+              <h3 class="project-card-title">Typemate Editor</h3>
+              <a href="https://github.com/Shresth-11" target="_blank" class="project-live-btn" title="GitHub Repo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+            <div class="live-project-tag-row">
+              <span class="live-project-badge">LIVE PROJECT</span>
+            </div>
+            <p class="project-card-desc">
+              Fully responsive rich text editor supporting 10+ formatting controls, featuring a "Smart Compose" ghost-text autocomplete predictive state engine.
+            </p>
+            <div class="project-card-tags">
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Autocomplete State</span>
+              <span class="skill-tag">CSS3</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="https://typemate-editor.vercel.app/" target="_blank" class="btn btn-brutalist btn-small">LIVE DEMO ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 (BlogSphere) -->
+        <div class="project-window-card">
+          <div class="window-title-bar title-bar-purple">
+            <div class="window-controls">
+              <span class="control-dot close"></span>
+              <span class="control-dot minimize"></span>
+            </div>
+            <span class="window-title-text">project_blogsphere.exe</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-header-row">
+              <h3 class="project-card-title">BlogSphere</h3>
+              <a href="https://github.com/Shresth-11" target="_blank" class="project-live-btn" title="GitHub Repo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+            <div class="live-project-tag-row">
+              <span class="live-project-badge">LIVE PROJECT</span>
+            </div>
+            <p class="project-card-desc">
+              Full-stack blog platform integrating Appwrite as a serverless backend for user auth, image storage, and global state management via Redux Toolkit.
+            </p>
+            <div class="project-card-tags">
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Redux Toolkit</span>
+              <span class="skill-tag">Appwrite BaaS</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="https://blogsphere-app.vercel.app/" target="_blank" class="btn btn-brutalist btn-small">LIVE DEMO ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 (Wanderlust) -->
+        <div class="project-window-card">
+          <div class="window-title-bar title-bar-orange">
+            <div class="window-controls">
+              <span class="control-dot close"></span>
+              <span class="control-dot minimize"></span>
+            </div>
+            <span class="window-title-text">project_wanderlust.exe</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-header-row">
+              <h3 class="project-card-title">Wanderlust</h3>
+              <a href="https://github.com/Shresth-11/Wanderlust" target="_blank" class="project-live-btn" title="GitHub Repo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+            <div class="live-project-tag-row">
+              <span class="live-project-badge">LIVE PROJECT</span>
+            </div>
+            <p class="project-card-desc">
+              Airbnb-inspired full-stack web application featuring role-based access control, 15+ REST endpoints, JWT authorization, and interactive front-end listings.
+            </p>
+            <div class="project-card-tags">
+              <span class="skill-tag">MERN Stack</span>
+              <span class="skill-tag">JWT Auth</span>
+              <span class="skill-tag">MongoDB Atlas</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="https://wanderlust-places.vercel.app/" target="_blank" class="btn btn-brutalist btn-small">LIVE DEMO ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Chronicle (Experience & Education Timeline) -->
+    <section class="section-chronicle" id="chronicle">
+      <div class="section-heading-block">
+        <span class="section-num">§ 06</span>
+        <h2 class="section-title">Chronicle Logs</h2>
+        <p class="section-desc">Timeline of academic and professional activities</p>
+      </div>
+
+      <div class="timeline-brutalist">
+        
+        <!-- Timeline Item 1 -->
+        <div class="timeline-block">
+          <div class="timeline-dot-container">
+            <span class="timeline-dot"></span>
+          </div>
+          <div class="timeline-card">
+            <div class="card-header header-orange">MAY 2025 — AUG 2025 // INTERNSHIP</div>
+            <div class="card-body">
+              <h3 class="timeline-title">Software Engineering Intern — Scramble Labs</h3>
+              <p class="timeline-text">
+                Shipped 4 modular React.js + TypeScript components in a Next.js codebase. Optimized layout logic using React.memo and useMemo rendering hooks, reducing page load times by 15% validated by Postman API regression workflows.
+              </p>
+              <div class="timeline-tags-row">
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Optimization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-block">
+          <div class="timeline-dot-container">
+            <span class="timeline-dot"></span>
+          </div>
+          <div class="timeline-card">
+            <div class="card-header header-yellow">2023 — PRESENT // EDUCATION</div>
+            <div class="card-body">
+              <h3 class="timeline-title">B.Tech in Computer Science &amp; Engineering — VIT Bhopal</h3>
+              <p class="timeline-text">
+                Focused on core computer science foundations including Data Structures, Algorithms, Object-Oriented Systems, Cloud Architectures, and Database designs. Currently holding an active CGPA of 8.35/10.
+              </p>
+              <div class="timeline-tags-row">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">DBMS</span>
+                <span class="skill-tag">Cloud</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-block">
+          <div class="timeline-dot-container">
+            <span class="timeline-dot"></span>
+          </div>
+          <div class="timeline-card">
+            <div class="card-header header-purple">2022 — 2023 // SCHOOL</div>
+            <div class="card-body">
+              <h3 class="timeline-title">Intermediate Certification — Bhavan's KDKVM</h3>
+              <p class="timeline-text">
+                Completed Senior Secondary boards focusing on science and computer foundations. Shipped secondary project applications with an overall score of 82%.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-block">
+          <div class="timeline-dot-container">
+            <span class="timeline-dot"></span>
+          </div>
+          <div class="timeline-card">
+            <div class="card-header header-mint">2020 — 2021 // SCHOOL</div>
+            <div class="card-body">
+              <h3 class="timeline-title">High School Certification — Bhavan's KDKVM</h3>
+              <p class="timeline-text">
+                Secondary education board. Graduated with an outstanding academic score of 98.6%.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Neo-Brutalist Footer (Colophon) -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-cta-card">
+      <span class="badge-tag">§ GET IN TOUCH</span>
+      <h2 class="footer-cta-title">SEND_PACKET.EXE</h2>
+      <p class="footer-cta-desc">
+        Interested in collaborations, internship roles, or discussing full-stack performance? Open a portal and send an inquiry down the line.
+      </p>
+      <a href="mailto:jaisshresth143@gmail.com" class="btn btn-brutalist btn-accent-orange email-cta">jaisshresth143@gmail.com ↗</a>
+    </div>
+
+    <!-- Telemetry Panel Grid -->
+    <div class="footer-telemetry-panel">
+      <div class="tel-grid-cell">
+        <span class="tel-label">SYSTEM CLOCK:</span>
+        <span class="tel-val" id="telemetry-clock">00:00:00 AM</span>
+      </div>
+      <div class="tel-grid-cell">
+        <span class="tel-label">TIME ZONE:</span>
+        <span class="tel-val">IST (GMT+5:30)</span>
+      </div>
+      <div class="tel-grid-cell">
+        <span class="tel-label">ACTIVE UPTIME:</span>
+        <span class="tel-val" id="telemetry-uptime">00000s</span>
+      </div>
+      <div class="tel-grid-cell">
+        <span class="tel-label">HOST PORTAL:</span>
+        <span class="tel-val">VERCEL.SECURE</span>
+      </div>
+    </div>
+
+    <!-- Social Badges Row -->
+    <div class="footer-social-row">
+      <a href="https://github.com/Shresth-11" target="_blank" class="btn btn-brutalist btn-accent-purple">GITHUB ↗</a>
+      <a href="https://linkedin.com/in/shresth-jaiswal" target="_blank" class="btn btn-brutalist btn-accent-teal">LINKEDIN ↗</a>
+      <a href="mailto:jaisshresth143@gmail.com" target="_blank" class="btn btn-brutalist btn-accent-yellow">EMAIL ↗</a>
+    </div>
+
+    <div class="footer-colophon-bottom">
+      <span class="copyright-text">© 2026 SHRESTH JAISWAL. HANDCRAFTED IN NEO-BRUTALIST CODE.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

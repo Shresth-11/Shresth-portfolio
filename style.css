@@ -1,0 +1,1326 @@
+/* ==========================================================================
+   NEO-BRUTALIST DESIGN SYSTEM & SYSTEM VARIABLES (ADITI STYLE)
+   ========================================================================== */
+
+:root {
+  --color-bg: #fdfaf4;             /* Light Warm Cream */
+  --color-text: #1a1a1a;           /* Deep Dark Gray/Black */
+  --color-border: #1a1a1a;         /* High Contrast Borders */
+  --color-card-bg: #ffffff;        /* Pure White Card Fill */
+  
+  /* Vibrant Retro-Pastel Accents */
+  --color-accent-orange: #ffadad;  /* Pastel Coral/Orange */
+  --color-accent-yellow: #ffd6a5;  /* Pastel Yellow */
+  --color-accent-mint: #caffbf;    /* Pastel Mint Green */
+  --color-accent-teal: #9bf6ff;    /* Pastel Aqua/Teal */
+  --color-accent-blue: #a0c4ff;    /* Pastel Sky Blue */
+  --color-accent-lavender: #bdb2ff;/* Pastel Lavender */
+  
+  --font-display: 'Space Grotesk', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --brutalist-border: 3px solid var(--color-border);
+  --brutalist-shadow: 6px 6px 0px var(--color-border);
+  --brutalist-shadow-sm: 4px 4px 0px var(--color-border);
+  --brutalist-shadow-hover: 1px 1px 0px var(--color-border);
+  
+  --transition-click: 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --transition-normal: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ==========================================================================
+   RESET & BASE CONFIGURATIONS
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+
+html, body {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'><path d='M2,2 L12,24 L16,16 L24,12 Z' fill='%23ffadad' stroke='%231a1a1a' stroke-width='2.5' stroke-linejoin='round'/></svg>") 2 2, auto;
+}
+
+a, button, [role="button"], .btn, .btn-brutalist, .btn-small, .accordion-trigger, .color-btn, .size-btn, .nav-link, .cmd-btn, .project-live-btn {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'><path d='M2,2 L12,24 L16,16 L24,12 Z' fill='%23ffd6a5' stroke='%231a1a1a' stroke-width='2.5' stroke-linejoin='round'/></svg>") 2 2, pointer !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+  border-left: var(--brutalist-border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent-yellow);
+  border: 3px solid var(--color-border);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-orange);
+}
+
+::selection {
+  background-color: var(--color-accent-lavender);
+  color: var(--color-text);
+}
+
+/* Global Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all var(--transition-click);
+}
+
+button, input, textarea {
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+}
+
+/* ==========================================================================
+   NEO-BRUTALIST LAYOUT CONTAINERS
+   ========================================================================== */
+
+.content-wrapper {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+section {
+  padding: 80px 0;
+  border-bottom: var(--brutalist-border);
+}
+
+/* Section Headings */
+.section-heading-block {
+  margin-bottom: 50px;
+  border: var(--brutalist-border);
+  background-color: var(--color-card-bg);
+  box-shadow: var(--brutalist-shadow);
+  padding: 24px 30px;
+  display: inline-block;
+  transform: rotate(-1deg);
+}
+
+.section-num {
+  font-family: var(--font-mono);
+  color: var(--color-text);
+  font-size: 1.1rem;
+  background-color: var(--color-accent-yellow);
+  padding: 2px 8px;
+  border: var(--brutalist-border);
+  margin-right: 12px;
+}
+
+.section-title {
+  display: inline-block;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.section-desc {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: #555555;
+  margin-top: 8px;
+}
+
+/* ==========================================================================
+   NEO-BRUTALIST BUTTONS
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  padding: 12px 24px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition: all var(--transition-click);
+}
+
+.btn-brutalist {
+  background-color: var(--color-card-bg);
+  border: var(--brutalist-border);
+  box-shadow: var(--brutalist-shadow-sm);
+  color: var(--color-text);
+}
+
+.btn-brutalist:hover {
+  transform: translate(3px, 3px);
+  box-shadow: var(--brutalist-shadow-hover);
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+}
+
+/* Button color themes */
+.btn-accent-orange { background-color: var(--color-accent-orange); }
+.btn-accent-yellow { background-color: var(--color-accent-yellow); }
+.btn-accent-purple { background-color: var(--color-accent-lavender); }
+.btn-accent-mint { background-color: var(--color-accent-mint); }
+.btn-accent-teal { background-color: var(--color-accent-teal); }
+
+.btn-clear:hover {
+  background-color: #ff5f56 !important;
+  color: white;
+}
+
+/* ==========================================================================
+   NEO-BRUTALIST PILL BADGES
+   ========================================================================== */
+
+.brutalist-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: var(--brutalist-border);
+  padding: 4px 10px;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+.badge-orange { background-color: var(--color-accent-orange); }
+.badge-yellow { background-color: var(--color-accent-yellow); }
+.badge-lavender { background-color: var(--color-accent-lavender); }
+
+/* ==========================================================================
+   RETRO OS WINDOW CONTAINER
+   ========================================================================== */
+
+.retro-window {
+  background-color: var(--color-card-bg);
+  border: var(--brutalist-border);
+  box-shadow: var(--brutalist-shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.window-title-bar {
+  background-color: var(--color-bg);
+  border-bottom: var(--brutalist-border);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.window-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.control-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+}
+.control-dot.close { background-color: #ff5f56; }
+.control-dot.minimize { background-color: #ffbd2e; }
+.control-dot.maximize { background-color: #27c93f; }
+
+.window-title-text {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.window-status-tag {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  background-color: var(--color-border);
+  color: var(--color-bg);
+  padding: 2px 6px;
+  font-weight: 700;
+}
+
+/* Title Bar Colors */
+.title-bar-teal { background-color: var(--color-accent-teal); }
+.title-bar-lavender { background-color: var(--color-accent-lavender); }
+.title-bar-orange { background-color: var(--color-accent-orange); }
+.title-bar-yellow { background-color: var(--color-accent-yellow); }
+.title-bar-purple { background-color: var(--color-accent-lavender); }
+
+/* ==========================================================================
+   STICKY HEADER & LOGO
+   ========================================================================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-bg);
+  border-bottom: var(--brutalist-border);
+  padding: 16px 0;
+}
+
+.header-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.logo-text {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border: 1.5px solid var(--color-border);
+  border-radius: 50%;
+  animation: pulse-ring 2s infinite;
+}
+
+.status-text {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.header-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  border: 2px solid transparent;
+}
+
+.nav-link:hover {
+  background-color: var(--color-accent-yellow);
+  border-color: var(--color-border);
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 0px var(--color-border);
+}
+
+/* ==========================================================================
+   HERO SECTION & IMAGE FRAME (ADITI STYLE)
+   ========================================================================== */
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.badge-row {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.highlight-underline {
+  position: relative;
+  z-index: 1;
+}
+
+.highlight-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: var(--color-accent-yellow);
+  z-index: -1;
+  border-bottom: 3px solid var(--color-border);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 650px;
+  margin-bottom: 40px;
+}
+
+.hero-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Profile image frame block (Aditi's picture) */
+.hero-image-column {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  background-color: var(--color-card-bg);
+  border: var(--brutalist-border);
+  box-shadow: 8px 8px 0px var(--color-border);
+  overflow: hidden;
+  width: 320px;
+  transform: rotate(2deg);
+  transition: transform var(--transition-normal);
+}
+
+.profile-card:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.profile-frame {
+  width: 100%;
+  height: 320px;
+  border-bottom: var(--brutalist-border);
+  overflow: hidden;
+  background-color: var(--color-accent-mint);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-details-banner {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: var(--color-bg);
+}
+
+/* ==========================================================================
+   DYNAMIC MARQUEE BANNER
+   ========================================================================== */
+
+.marquee-container {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: var(--color-accent-orange);
+  border-top: var(--brutalist-border);
+  border-bottom: var(--brutalist-border);
+  overflow: hidden;
+  padding: 12px 0;
+  display: flex;
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  gap: 40px;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+.marquee-content span {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+/* ==========================================================================
+   CONSOLE TERMINAL WIDGET
+   ========================================================================== */
+
+.terminal-window {
+  margin-bottom: 20px;
+}
+
+.terminal-body {
+  height: 340px;
+  background-color: #121212;
+  color: #a7f3d0; /* Terminal Muted Green */
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: var(--brutalist-border);
+}
+
+.cmd-highlight {
+  color: var(--color-accent-yellow);
+  font-weight: 700;
+}
+
+.cmd-sys {
+  color: #ffffff;
+}
+
+.terminal-input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.terminal-prompt {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-accent-teal);
+}
+
+#terminal-input {
+  flex: 1;
+  background: none;
+  border: none;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: #ffffff;
+  caret-color: var(--color-accent-teal);
+}
+
+.command-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.shortcut-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #555555;
+  margin-right: 8px;
+}
+
+/* ==========================================================================
+   ABOUT MANIFESTO & ACCORDION
+   ========================================================================== */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.about-bio-card {
+  border: var(--brutalist-border);
+  box-shadow: var(--brutalist-shadow);
+  background-color: var(--color-card-bg);
+}
+
+.card-header {
+  border-bottom: var(--brutalist-border);
+  padding: 14px 20px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.header-orange { background-color: var(--color-accent-orange); }
+.header-purple { background-color: var(--color-accent-lavender); }
+.header-yellow { background-color: var(--color-accent-yellow); }
+.header-mint { background-color: var(--color-accent-mint); }
+
+.card-body {
+  padding: 30px;
+}
+
+.lead-bio {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.paragraph-bio {
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+  color: #333333;
+}
+
+.about-principles {
+  border: var(--brutalist-border);
+  box-shadow: var(--brutalist-shadow);
+  background-color: var(--color-card-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Accordion Component */
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-item {
+  border-bottom: var(--brutalist-border);
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  text-align: left;
+  background-color: var(--color-card-bg);
+  border: none;
+}
+
+.accordion-trigger:hover {
+  background-color: var(--color-bg);
+}
+
+.accordion-num {
+  font-family: var(--font-mono);
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 40px;
+}
+
+.accordion-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  flex: 1;
+}
+
+.accordion-icon {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  font-weight: 800;
+  transition: transform var(--transition-normal);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-normal) ease-out;
+  padding: 0 20px;
+  font-size: 0.95rem;
+  color: #444444;
+}
+
+.accordion-content p {
+  padding-bottom: 20px;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 180px;
+}
+
+.accordion-item.active .accordion-trigger {
+  border-bottom: var(--brutalist-border);
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+}
+
+/* ==========================================================================
+   INTERACTIVE CANVAS (SKETCHPAD)
+   ========================================================================== */
+
+.sketch-window {
+  margin-bottom: 20px;
+}
+
+.sketch-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.sketch-toolbar {
+  border-bottom: var(--brutalist-border);
+  background-color: var(--color-bg);
+  padding: 14px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toolbar-group-right {
+  margin-left: auto;
+}
+
+.tool-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #555555;
+}
+
+.color-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.color-btn:hover {
+  transform: scale(1.15);
+}
+
+.color-btn.active {
+  box-shadow: 0 0 0 2px var(--color-bg), 0 0 0 4px var(--color-border);
+}
+
+.size-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border: var(--brutalist-border);
+  cursor: pointer;
+  background-color: var(--color-card-bg);
+}
+
+.size-btn.active {
+  background-color: var(--color-accent-yellow);
+}
+
+.canvas-container {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  cursor: crosshair;
+  background-color: #ffffff;
+}
+
+.canvas-container.grid-background {
+  background-image: 
+    linear-gradient(#f1f1f1 1px, transparent 1px),
+    linear-gradient(90deg, #f1f1f1 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+#sketchpad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.canvas-watermark {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #e5e5e5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ==========================================================================
+   STACK & INSTRUMENTS (SKILLS)
+   ========================================================================== */
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.stack-category-card {
+  border: var(--brutalist-border);
+  box-shadow: var(--brutalist-shadow);
+  background-color: var(--color-card-bg);
+}
+
+.skills-tags-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  border: var(--brutalist-border);
+  background-color: var(--color-bg);
+  box-shadow: 2px 2px 0px var(--color-border);
+  transition: all var(--transition-click);
+}
+
+.skill-tag:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px var(--color-border);
+  background-color: var(--color-accent-teal);
+}
+
+/* ==========================================================================
+   SELECTED WORK (PROJECTS CARDS - ADITI STYLE)
+   ========================================================================== */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.project-window-card {
+  background-color: var(--color-card-bg);
+  border: var(--brutalist-border);
+  box-shadow: var(--brutalist-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.project-card-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.project-live-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-border);
+  color: #ffffff;
+  border: 2px solid var(--color-border);
+  border-radius: 4px;
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.15);
+  transition: all var(--transition-click);
+}
+
+.project-live-btn:hover {
+  background-color: var(--color-accent-orange);
+  color: var(--color-text);
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+
+.live-project-tag-row {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.live-project-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--color-text);
+  background-color: var(--color-accent-orange);
+  border: var(--brutalist-border);
+  border-width: 1.5px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.project-card-desc {
+  font-size: 0.95rem;
+  color: #444444;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.project-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.tech-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border: 1px solid var(--color-border);
+  background-color: #fafafa;
+}
+
+.project-card-actions {
+  display: flex;
+}
+
+.project-card-actions .btn {
+  width: 100%;
+}
+
+/* ==========================================================================
+   CHRONICLE (EXPERIENCE & EDUCATION TIMELINE)
+   ========================================================================== */
+
+.timeline-brutalist {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 40px;
+  border-left: var(--brutalist-border);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.timeline-block {
+  position: relative;
+}
+
+.timeline-dot-container {
+  position: absolute;
+  left: -53px;
+  top: 16px;
+  background-color: var(--color-bg);
+  padding: 4px 0;
+}
+
+.timeline-dot {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: var(--brutalist-border);
+  background-color: var(--color-accent-yellow);
+}
+
+.timeline-block:hover .timeline-dot {
+  background-color: var(--color-accent-orange);
+  transform: scale(1.15);
+}
+
+.timeline-card {
+  border: var(--brutalist-border);
+  box-shadow: var(--brutalist-shadow);
+  background-color: var(--color-card-bg);
+  overflow: hidden;
+}
+
+.timeline-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.timeline-text {
+  font-size: 0.95rem;
+  color: #333333;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.timeline-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ==========================================================================
+   FOOTER (COLOPHON)
+   ========================================================================== */
+
+.site-footer {
+  background-color: var(--color-bg);
+  border-top: var(--brutalist-border);
+  padding: 80px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-cta-card {
+  max-width: 800px;
+  width: 100%;
+  border: var(--brutalist-border);
+  box-shadow: var(--brutalist-shadow);
+  background-color: var(--color-card-bg);
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.badge-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 800;
+  background-color: var(--color-accent-yellow);
+  padding: 2px 8px;
+  border: var(--brutalist-border);
+}
+
+.footer-cta-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-cta-desc {
+  font-size: 1.1rem;
+  color: #444444;
+  margin-bottom: 30px;
+}
+
+.email-cta {
+  font-size: 1.3rem;
+  padding: 16px 32px;
+}
+
+/* Footer Telemetry Table Grid */
+.footer-telemetry-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  max-width: 1200px;
+  border: var(--brutalist-border);
+  background-color: var(--color-card-bg);
+  box-shadow: var(--brutalist-shadow-sm);
+  margin-bottom: 40px;
+}
+
+.tel-grid-cell {
+  padding: 16px 20px;
+  border-right: var(--brutalist-border);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tel-grid-cell:last-child {
+  border-right: none;
+}
+
+.tel-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: #666666;
+  font-weight: 700;
+}
+
+.tel-val {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+/* Social Buttons Grid */
+.footer-social-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 50px;
+}
+
+.footer-colophon-bottom {
+  width: 100%;
+  max-width: 1200px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #666666;
+}
+
+/* ==========================================================================
+   SPLASH RETRO BOOT SYSTEM LOADER (ADITI STYLE)
+   ========================================================================== */
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0b0a09; /* Dark environment for booting */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+  padding: 20px;
+}
+
+.loader-overlay.loaded {
+  transform: translateY(-100%);
+}
+
+.loader-window {
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 12px 12px 0px #000000;
+}
+
+.loader-body {
+  height: 300px;
+  background-color: #000000;
+  color: #caffbf; /* Boot logs color (Mint) */
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.boot-logs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  line-height: 1.4;
+}
+
+.boot-cursor::after {
+  content: '_';
+  animation: cursor-blink 0.8s steps(2, start) infinite;
+}
+
+/* ==========================================================================
+   ANIMATION KEYFRAMES
+   ========================================================================== */
+
+@keyframes pulse-ring {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0px rgba(16, 185, 129, 0.4);
+  }
+  50% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+  }
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes cursor-blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+   ========================================================================== */
+
+@media (max-width: 1100px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .hero-main {
+    align-items: center;
+  }
+
+  .hero-cta-row {
+    justify-content: center;
+  }
+  
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .stack-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-telemetry-panel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .tel-grid-cell {
+    border-bottom: var(--brutalist-border);
+  }
+  
+  .tel-grid-cell:nth-child(2) {
+    border-right: none;
+  }
+  
+  .tel-grid-cell:nth-child(3), .tel-grid-cell:nth-child(4) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .content-wrapper {
+    padding: 0 20px;
+  }
+
+  .site-header {
+    padding: 12px 0;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .footer-cta-title {
+    font-size: 2.2rem;
+  }
+
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-telemetry-panel {
+    grid-template-columns: 1fr;
+  }
+  
+  .tel-grid-cell {
+    border-right: none !important;
+    border-bottom: var(--brutalist-border);
+  }
+  
+  .tel-grid-cell:last-child {
+    border-bottom: none;
+  }
+
+  .footer-colophon-bottom {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+}
