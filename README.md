@@ -5,7 +5,7 @@ A professional, high-fidelity portfolio website built with a light cream **Neo-B
 ---
 
 ## 🚀 Live Demo & Repository
-- **Repository**: [github.com/Shresth-11/Portfolio](https://github.com/Shresth-11/Portfolio)
+- **Repository**: [github.com/Shresth-11/Shresth-portfolio](https://github.com/Shresth-11/Shresth-portfolio)
 - **Deployment Target**: Vercel Edge Networks
 
 ---
@@ -53,8 +53,8 @@ Showcases your primary project portfolio (*Typemate Editor*, *BlogSphere*, *Wand
 To run the portfolio locally:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Shresth-11/Portfolio.git
-   cd Portfolio
+   git clone https://github.com/Shresth-11/Shresth-portfolio.git
+   cd Shresth-portfolio
    ```
 2. Launch a local HTTP server (such as Python's built-in module):
    ```bash
