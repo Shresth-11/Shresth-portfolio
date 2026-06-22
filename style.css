@@ -358,7 +358,7 @@ section {
 }
 
 .nav-link:hover {
-  background-color: var(--color-accent-yellow);
+  background-color: var(--color-accent-orange);
   border-color: var(--color-border);
   transform: translate(-2px, -2px);
   box-shadow: 2px 2px 0px var(--color-border);
