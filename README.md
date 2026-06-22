@@ -5,8 +5,9 @@ A professional, high-fidelity portfolio website built with a light cream **Neo-B
 ---
 
 ## 🚀 Live Demo & Repository
+- **Live Demo**: [thisisshresth.vercel.app](https://thisisshresth.vercel.app)
 - **Repository**: [github.com/Shresth-11/Shresth-portfolio](https://github.com/Shresth-11/Shresth-portfolio)
-- **Deployment Target**: Vercel Edge Networks
+- **Deployment Target**: Vercel Edge Networks (Custom Subdomain)
 
 ---
 
