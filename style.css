@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NEO-BRUTALIST DESIGN SYSTEM & SYSTEM VARIABLES (ADITI STYLE)
+   NEO-BRUTALIST DESIGN SYSTEM & SYSTEM VARIABLES
    ========================================================================== */
 
 :root {
@@ -189,6 +189,7 @@ section {
 .btn-brutalist:hover {
   transform: translate(3px, 3px);
   box-shadow: var(--brutalist-shadow-hover);
+  background-color: var(--color-accent-yellow);
 }
 
 .btn-small {
@@ -203,6 +204,12 @@ section {
 .btn-accent-purple { background-color: var(--color-accent-lavender); }
 .btn-accent-mint { background-color: var(--color-accent-mint); }
 .btn-accent-teal { background-color: var(--color-accent-teal); }
+
+.btn-accent-orange:hover { background-color: var(--color-accent-yellow); }
+.btn-accent-yellow:hover { background-color: var(--color-accent-orange); }
+.btn-accent-purple:hover { background-color: var(--color-accent-mint); }
+.btn-accent-mint:hover { background-color: var(--color-accent-teal); }
+.btn-accent-teal:hover { background-color: var(--color-accent-lavender); }
 
 .btn-clear:hover {
   background-color: #ff5f56 !important;
@@ -365,7 +372,7 @@ section {
 }
 
 /* ==========================================================================
-   HERO SECTION & IMAGE FRAME (ADITI STYLE)
+   HERO SECTION & IMAGE FRAME
    ========================================================================== */
 
 .hero-layout {
@@ -424,7 +431,7 @@ section {
   gap: 16px;
 }
 
-/* Profile image frame block (Aditi's picture) */
+/* Profile image frame block */
 .hero-image-column {
   display: flex;
   justify-content: center;
@@ -852,7 +859,7 @@ section {
 }
 
 /* ==========================================================================
-   SELECTED WORK (PROJECTS CARDS - ADITI STYLE)
+   SELECTED WORK (PROJECTS CARDS)
    ========================================================================== */
 
 .projects-grid {
@@ -1150,7 +1157,7 @@ section {
 }
 
 /* ==========================================================================
-   SPLASH RETRO BOOT SYSTEM LOADER (ADITI STYLE)
+   SPLASH RETRO BOOT SYSTEM LOADER
    ========================================================================== */
 
 .loader-overlay {
