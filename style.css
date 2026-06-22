@@ -961,6 +961,19 @@ section {
   width: 100%;
 }
 
+/* Custom hover background colors matching project card accents */
+.project-window-card:nth-child(1) .project-card-actions .btn:hover {
+  background-color: var(--color-accent-yellow) !important;
+}
+
+.project-window-card:nth-child(2) .project-card-actions .btn:hover {
+  background-color: var(--color-accent-lavender) !important;
+}
+
+.project-window-card:nth-child(3) .project-card-actions .btn:hover {
+  background-color: var(--color-accent-orange) !important;
+}
+
 /* ==========================================================================
    CHRONICLE (EXPERIENCE & EDUCATION TIMELINE)
    ========================================================================== */
